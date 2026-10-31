@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Русский язык — правила, упражнения, слова и алфавит</title>
+  <meta name="description" content="Интерактивный сайт по русскому языку: правила с примерами, упражнения с проверкой, словарные слова и алфавит.">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2735'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' text-anchor='middle' fill='%23f6f2ea'%3E%D0%AF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('rus-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">Я</span>
+        <span class="brand-text">
+          <strong>Русский язык</strong>
+          <span>учимся с интересом</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#rules" data-nav="rules"><span>01</span> Правила</a>
+        <a href="#exercises" data-nav="exercises"><span>02</span> Упражнения</a>
+        <a href="#vocabulary" data-nav="vocabulary"><span>03</span> Слова</a>
+        <a href="#alphabet" data-nav="alphabet"><span>04</span> Алфавит</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Интерактивный учебник</p>
+          <h1>Русский язык — <br><em>с интересом</em><br>и по полочкам</h1>
+          <p class="hero-lead">Правила без скучной зубрёжки, упражнения с мгновенной проверкой, словарные слова и алфавит. Всё важное — в одном месте.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#exercises">Начать упражнения <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#rules">Смотреть правила</a>
+          </div>
+          <div class="hero-stats" aria-label="Содержание сайта">
+            <div><strong data-stat="rules">21</strong><span>правило</span></div>
+            <div><strong data-stat="exercises">20</strong><span>заданий</span></div>
+            <div><strong data-stat="words">76</strong><span>слов</span></div>
+            <div><strong>33</strong><span>буквы</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-ring"></div>
+          <div class="flashcard flashcard-main">
+            <span class="flashcard-tape"></span>
+            <span class="flashcard-label">Словарное слово</span>
+            <span class="flashcard-word">здра́вствуйте</span>
+            <span class="flashcard-note">вежливое приветствие</span>
+            <span class="flashcard-letter">З</span>
+          </div>
+          <div class="flashcard flashcard-mini flashcard-rule">
+            <span class="mini-label">Правило</span>
+            <strong>жи — ши</strong>
+            <span>пиши с буквой «и»</span>
+          </div>
+          <div class="flashcard flashcard-mini flashcard-quote">
+            <span class="quote-mark">«</span>
+            <p>Учиться — всегда пригодится.</p>
+          </div>
+          <div class="alphabet-badge"><strong>33</strong><span>буквы<br>алфавита</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rules" data-section="rules">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span>01</span> Теория без зубрёжки</p>
+          <h2>Правила русского языка</h2>
+          <p class="section-lead">Короткие объяснения с примерами. Откройте карточку, чтобы повторить правило или проверить себя перед упражнением.</p>
+        </div>
+
+        <div class="rules-toolbar">
+          <div class="filter-chips" id="rulesFilters" role="group" aria-label="Фильтр правил по разделам">
+            <button class="chip is-active" type="button" data-filter="all">Все <span class="chip-count">21</span></button>
+            <button class="chip" type="button" data-filter="orthography">Орфография <span class="chip-count">10</span></button>
+            <button class="chip" type="button" data-filter="punctuation">Пунктуация <span class="chip-count">6</span></button>
+            <button class="chip" type="button" data-filter="morphology">Морфология <span class="chip-count">2</span></button>
+            <button class="chip" type="button" data-filter="syntax">Синтаксис <span class="chip-count">3</span></button>
+          </div>
+          <p class="toolbar-note">Нажмите на карточку, чтобы раскрыть правило</p>
+        </div>
+
+        <div class="rules-grid" id="rulesGrid">
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Жи-ши, ча-ща, чу-щу</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>После <b>ж</b> и <b>ш</b> пишется <b>и</b>, после <b>ч</b> и <b>щ</b> — <b>а</b> и <b>у</b>. Правило не зависит от произношения.</p>
+              <ul class="rule-examples">
+                <li>ж<mark>и</mark>знь, маш<mark>и</mark>на, ш<mark>и</mark>шка</li>
+                <li>ч<mark>а</mark>ща, площ<mark>а</mark>дка, щ<mark>а</mark>вель</li>
+                <li>ч<mark>у</mark>до, щ<mark>у</mark>ка, ворч<mark>у</mark>н</li>
+              </ul>
+              <p class="rule-tip"><strong>Запомните:</strong> в сочетаниях жи-ши, ча-ща, чу-щу мягкий знак не пишется.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Безударные гласные в корне</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Если гласная в корне без ударения, подберите проверочное слово, в котором она под ударением: в<mark>о</mark>да — в<mark>о</mark>ды.</p>
+              <ul class="rule-examples">
+                <li>тр<mark>а</mark>ва — тр<mark>а</mark>вы</li>
+                <li>л<mark>е</mark>сной — л<mark>е</mark>с</li>
+                <li>сн<mark>е</mark>жинка — сн<mark>е</mark>г</li>
+              </ul>
+              <p class="rule-tip"><strong>Не проверяйте</strong> гласную глаголом с суффиксом -ыва-/-ива-: опоздать — п<mark>о</mark>здно (а не «опаздывать»).</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Чередующиеся гласные в корне</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>В корнях с чередованием гласная зависит от условия: ударения, следующей буквы или суффикса.</p>
+              <ul class="rule-list">
+                <li><b>-лаг- / -лож-</b>: перед <b>г</b> — а (предлаг<mark>а</mark>ть), перед <b>ж</b> — о (предл<mark>о</mark>жить).</li>
+                <li><b>-раст- / -ращ- / -рос-</b>: перед <b>ст</b> и <b>щ</b> — а (р<mark>а</mark>сти), перед <b>с</b> — о (выр<mark>о</mark>с).</li>
+                <li><b>-кас- / -кос-</b>: есть суффикс -а- после корня — а (кас<mark>а</mark>ться), нет — о (коснуться).</li>
+                <li><b>-бер- / -бир-</b>: перед суффиксом -а- пишется и (собирать), иначе е (собрать).</li>
+              </ul>
+              <p class="rule-tip"><strong>Исключения:</strong> росток, Ростов, ростовщик, отрасль.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Приставки на з- и с-</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>На конце приставок на -з/-с пишется <b>с</b> перед глухими согласными и <b>з</b> перед звонкими.</p>
+              <ul class="rule-examples">
+                <li>ра<mark>з</mark>будить (звонкая «б»), и<mark>з</mark>менить (звонкая «м»)</li>
+                <li>бе<mark>с</mark>шумный (глухая «ш»), ра<mark>с</mark>красить (глухая «к»)</li>
+              </ul>
+              <p class="rule-tip"><strong>Приставки «з» не бывает:</strong> сделать, сдать, сбежать. А в слове «здесь» з входит в корень.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Приставки пре- и при-</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Выбор буквы зависит от значения приставки.</p>
+              <ul class="rule-list">
+                <li><b>при-</b> — приближение, присоединение, близость, неполное действие: приехать, приклеить, пришкольный, приоткрыть.</li>
+                <li><b>пре-</b> — значение «очень» или близкое к «пере-»: прекрасный, преградить, преодолеть.</li>
+              </ul>
+              <p class="rule-tip"><strong>Совет:</strong> если значение приставки неясно, проверяйте слово по словарю.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">-ТСЯ и -ТЬСЯ</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Задайте вопрос к глаголу. Если в вопросе есть <b>ь</b> («что делать?», «что сделать?»), пишем <b>-ться</b>. Если нет («что делает?», «что сделает?») — <b>-тся</b>.</p>
+              <ul class="rule-examples">
+                <li>Он улыбае<mark>тся</mark> (что делает?).</li>
+                <li>Надо улыбну<mark>ться</mark> (что сделать?).</li>
+                <li>Ученик учи<mark>тся</mark>, а мы будем учи<mark>ться</mark>.</li>
+              </ul>
+              <p class="rule-tip"><strong>Правило-помощник:</strong> есть мягкий знак в вопросе — есть и в глаголе.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">НЕ с глаголами</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p><b>НЕ</b> с глаголами пишется раздельно. Слитно — только если слово без НЕ не употребляется.</p>
+              <ul class="rule-examples">
+                <li>не знал, не пришёл, не буду</li>
+                <li>ненавидеть, недоумевать, недомогать</li>
+              </ul>
+              <p class="rule-tip"><strong>Сравните:</strong> «недостаёт» — не хватает, «не достаёт» — не дотягивается.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Одна и две Н в прилагательных</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>В прилагательных суффиксы <b>-ан-, -ян-, -ин-</b> пишутся с одной Н, а <b>-онн-, -енн-</b> — с двумя. Основа на Н + суффикс Н даёт НН.</p>
+              <ul class="rule-examples">
+                <li>кож<mark>ан</mark>ый, серебр<mark>ян</mark>ый, гус<mark>ин</mark>ый</li>
+                <li>станци<mark>онн</mark>ый, утр<mark>енн</mark>ий</li>
+                <li>карти<mark>нн</mark>ая галерея, тума<mark>нн</mark>ое утро</li>
+              </ul>
+              <p class="rule-tip"><strong>Исключения:</strong> стеклянный, оловянный, деревянный, ветреный.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">О и Ё после шипящих</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>В корне после ж, ш, ч, щ под ударением пишется <b>Ё</b>, если можно подобрать однокоренное слово с <b>Е</b>. Если такого слова нет — пишем <b>О</b>.</p>
+              <ul class="rule-examples">
+                <li>ш<mark>ё</mark>лк — шелка, ч<mark>ё</mark>рный — чернеть, ж<mark>ё</mark>лтый — желтеть</li>
+                <li>ш<mark>о</mark>рох, ш<mark>о</mark>в, капюш<mark>о</mark>н, крыж<mark>о</mark>вник</li>
+              </ul>
+              <p class="rule-tip"><strong>Запомните:</strong> в заимствованных словах чаще пишется О: шоссе, шоколад, жокей.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="orthography">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Орфография</span>
+                <span class="rule-title">Мягкий знак после шипящих</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p><b>Ь</b> после ж, ш, ч, щ пишется у существительных женского рода 3-го склонения, у глаголов 2-го лица единственного числа, в неопределённой форме и в наречиях.</p>
+              <ul class="rule-examples">
+                <li>ночь, дочь — женский род, 3-е склонение</li>
+                <li>пишешь, моешься — 2-е лицо, единственное число</li>
+                <li>беречь, настежь; но: муж, карандаш, врач</li>
+              </ul>
+              <p class="rule-tip"><strong>Исключения:</strong> уж, замуж, невтерпёж — без мягкого знака.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Запятая при однородных членах</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Запятая ставится между однородными членами без союзов и перед союзами <b>а, но, однако</b>. При одиночном союзе <b>и</b> (или, либо, да = и) запятая не нужна.</p>
+              <ul class="rule-examples">
+                <li>Купили яблоки, груши, сливы.</li>
+                <li>Купили яблоки, груши и сливы.</li>
+                <li>Купили не яблоки, а груши.</li>
+              </ul>
+              <p class="rule-tip"><strong>При повторяющихся союзах</strong> запятая нужна: и в лесу, и в поле, и у реки.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Причастный оборот</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Причастный оборот обособляется запятыми, если стоит <b>после</b> определяемого слова. Если перед ним — обычно не обособляется.</p>
+              <ul class="rule-examples">
+                <li>Книга, лежащая на столе, открыта.</li>
+                <li>Лежащая на столе книга открыта.</li>
+                <li>Мальчик, испугавшийся грозы, побледнел.</li>
+              </ul>
+              <p class="rule-tip"><strong>Подсказка:</strong> оборот отвечает на вопрос «какой?» и относится к существительному.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Деепричастный оборот</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Деепричастный оборот и одиночное деепричастие в предложении всегда выделяются запятыми.</p>
+              <ul class="rule-examples">
+                <li>Он шёл, напевая песню.</li>
+                <li>Улыбаясь, она открыла дверь.</li>
+                <li>Дети, устав от прогулки, вернулись домой.</li>
+              </ul>
+              <p class="rule-tip"><strong>Помните:</strong> деепричастие обозначает добавочное действие того же лица, что и основной глагол.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Тире между подлежащим и сказуемым</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Тире ставится, если подлежащее и сказуемое выражены существительными в именительном падеже или инфинитивами.</p>
+              <ul class="rule-examples">
+                <li>Москва — столица России.</li>
+                <li>Учиться — всегда пригодится.</li>
+                <li>Книга — источник знаний.</li>
+              </ul>
+              <p class="rule-tip"><strong>Тире не ставится,</strong> если подлежащее — личное местоимение («Он врач») или перед сказуемым стоит НЕ («Бедность не порок»).</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Запятая в сложном предложении</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>В сложносочинённом предложении перед союзами <b>и, а, но, да, или, либо</b> ставится запятая, если части равноправны.</p>
+              <ul class="rule-examples">
+                <li>Ветер стих, и наступила тишина.</li>
+                <li>Солнце село, но было ещё светло.</li>
+                <li>Открылась дверь, и в комнату вошёл гость.</li>
+              </ul>
+              <p class="rule-tip"><strong>Не путайте:</strong> при однородных сказуемых запятая не нужна — «Ветер стих и утих».</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="punctuation">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Пунктуация</span>
+                <span class="rule-title">Вводные слова</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Вводные слова выражают отношение говорящего и выделяются запятыми: <b>конечно, вероятно, кажется, во-первых, к сожалению</b>.</p>
+              <ul class="rule-examples">
+                <li>Конечно, мы успеем.</li>
+                <li>Он, вероятно, уже дома.</li>
+                <li>Во-первых, нужно повторить правило.</li>
+              </ul>
+              <p class="rule-tip"><strong>Проверка:</strong> вводное слово можно убрать без потери смысла — предложение останется грамматически верным.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="morphology">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Морфология</span>
+                <span class="rule-title">Спряжение глаголов</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p><b>I спряжение:</b> -ешь, -ет, -ем, -ете, -ут/-ют. <b>II спряжение:</b> -ишь, -ит, -им, -ите, -ат/-ят. Спряжение определяют по инфинитиву.</p>
+              <ul class="rule-examples">
+                <li>пиш<mark>е</mark>шь (писать, I), чита<mark>е</mark>т (читать, I)</li>
+                <li>говор<mark>и</mark>шь (говорить, II), смотр<mark>и</mark>т (смотреть, II)</li>
+              </ul>
+              <p class="rule-tip"><strong>Исключения II:</strong> гнать, держать, дышать, слышать, смотреть, видеть, ненавидеть, обидеть, терпеть, вертеть, зависеть. <strong>I:</strong> брить, стелить.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="morphology">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Морфология</span>
+                <span class="rule-title">Склонение существительных</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p><b>1-е склонение</b> — существительные м. и ж. рода на -а/-я. <b>2-е</b> — м. род без окончания и ср. род на -о/-е. <b>3-е</b> — ж. род на -ь.</p>
+              <ul class="rule-examples">
+                <li>страна, дядя — 1-е склонение</li>
+                <li>стол, окно — 2-е склонение</li>
+                <li>ночь, тетрадь — 3-е склонение</li>
+              </ul>
+              <p class="rule-tip"><strong>Обратите внимание:</strong> у 1-го склонения в родительном падеже — страны, дяди; у 3-го — ночи, тетради.</p>
+            </div>
+          </details>
+          <details class="rule" data-category="syntax">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Синтаксис</span>
+                <span class="rule-title">Главные члены предложения</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>Грамматическая основа — это <b>подлежащее</b> (кто? что?) и <b>сказуемое</b> (что делает? что такое?).</p>
+              <ul class="rule-examples">
+                <li>Дети играют в саду. — Дети (подлежащее), играют (сказуемое).</li>
+                <li>Москва — столица России. — Москва, столица России.</li>
+              </ul>
+              <p class="rule-tip"><strong>Сказуемое</strong> может быть простым глагольным, составным глагольным или составным именным.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="syntax">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Синтаксис</span>
+                <span class="rule-title">Второстепенные члены предложения</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p><b>Дополнение</b> отвечает на вопросы косвенных падежей, <b>определение</b> — какой? чей?, <b>обстоятельство</b> — где? когда? как? почему?</p>
+              <ul class="rule-examples">
+                <li>Маленький котёнок спал в корзине.</li>
+                <li>Маленький — определение, в корзине — обстоятельство.</li>
+              </ul>
+              <p class="rule-tip"><strong>Сравните:</strong> вижу (что?) дом — дополнение; вижу (какой?) новый дом — определение.</p>
+            </div>
+          </details>
+
+          <details class="rule" data-category="syntax">
+            <summary>
+              <span class="rule-summary">
+                <span class="rule-cat">Синтаксис</span>
+                <span class="rule-title">Виды предложений</span>
+              </span>
+              <span class="rule-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="rule-body">
+              <p>По цели высказывания предложения бывают <b>повествовательные, вопросительные и побудительные</b>. По интонации — восклицательные и невосклицательные.</p>
+              <ul class="rule-examples">
+                <li>На улице идёт дождь. (повествовательное)</li>
+                <li>Ты выучил правило? (вопросительное)</li>
+                <li>Повтори правило! (побудительное, восклицательное)</li>
+              </ul>
+              <p class="rule-tip"><strong>Главное:</strong> смотрите на цель высказывания и знак в конце предложения.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="exercises" data-section="exercises">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span>02</span> Практика с проверкой</p>
+          <h2>Упражнения</h2>
+          <p class="section-lead">Выберите раздел и отвечайте на вопросы. После каждого ответа — объяснение, в конце — результат и разбор ошибок.</p>
+        </div>
+
+        <div class="exercise-layout">
+          <aside class="exercise-side">
+            <div class="set-list" id="setList" aria-label="Выбор раздела упражнений">
+              <button class="set-btn is-active" type="button" data-set="orthography" aria-pressed="true">
+                <span class="set-icon">Аа</span>
+                <span class="set-text"><strong>Орфография</strong><small>8 заданий</small></span>
+                <span class="set-badge" aria-hidden="true"></span>
+              </button>
+              <button class="set-btn" type="button" data-set="punctuation" aria-pressed="false">
+                <span class="set-icon">?!</span>
+                <span class="set-text"><strong>Пунктуация</strong><small>6 заданий</small></span>
+                <span class="set-badge" aria-hidden="true"></span>
+              </button>
+              <button class="set-btn" type="button" data-set="stress" aria-pressed="false">
+                <span class="set-icon">у́</span>
+                <span class="set-text"><strong>Ударение</strong><small>6 заданий</small></span>
+                <span class="set-badge" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="exercise-tip">
+              <span class="tip-label">Совет</span>
+              <p>Не спешите. Ошибка — это не провал, а хороший повод вспомнить правило.</p>
+              <a href="#rules">Перейти к правилам →</a>
+            </div>
+          </aside>
+
+          <div class="quiz-panel" id="quizPanel" aria-live="off">
+            <div class="quiz-card" id="quizCard">
+              <p class="quiz-loading">Загружаем упражнение…</p>
+            </div>
+            <noscript><p class="no-js-note">Для выполнения упражнений нужен JavaScript.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section vocabulary" id="vocabulary" data-section="vocabulary">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span>03</span> Словарный запас</p>
+          <h2>Словарные слова</h2>
+          <p class="section-lead">Слова, которые важно запомнить. Ищите по буквам, повторяйте значения и проверяйте себя в режиме тренировки.</p>
+        </div>
+
+        <div class="vocab-toolbar">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <label class="visually-hidden" for="wordSearch">Поиск словарного слова</label>
+            <input type="search" id="wordSearch" placeholder="Найти слово, например «алфавит»" autocomplete="off">
+            <button class="search-clear" id="clearSearch" type="button" aria-label="Очистить поиск" hidden>×</button>
+          </div>
+          <button class="trainer-toggle" id="trainingToggle" type="button" aria-pressed="false">
+            <span class="switch" aria-hidden="true"><span></span></span>
+            Режим тренировки
+          </button>
+        </div>
+
+        <div class="letter-filter" id="letterFilter" role="group" aria-label="Фильтр слов по первой букве"></div>
+
+        <div class="vocab-meta">
+          <span id="wordCount" class="word-count"></span>
+          <span class="trainer-note" id="trainerNote" hidden>Нажмите на карточку, чтобы открыть значение</span>
+        </div>
+
+        <div class="word-grid" id="wordGrid"></div>
+        <div class="vocab-empty" id="vocabEmpty" hidden>
+          <span aria-hidden="true">?</span>
+          <h3>Ничего не нашлось</h3>
+          <p>Попробуйте другое слово или выберите другую букву.</p>
+          <button class="btn btn-soft" id="resetWords" type="button">Сбросить фильтры</button>
+        </div>
+
+        <div class="vocab-more">
+          <button class="btn btn-ghost" id="loadMore" type="button" hidden>Показать ещё</button>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="alphabet" data-section="alphabet">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span>04</span> Основа основ</p>
+          <h2>Алфавит русского языка</h2>
+          <p class="section-lead">33 буквы: 10 гласных, 21 согласная и 2 знака, которые не обозначают звук. Выберите букву, чтобы увидеть подсказку.</p>
+        </div>
+
+        <div class="alphabet-legend" aria-label="Обозначения">
+          <span><i class="dot dot-vowel"></i> Гласные — 10</span>
+          <span><i class="dot dot-consonant"></i> Согласные — 21</span>
+          <span><i class="dot dot-sign"></i> Без звука — 2</span>
+        </div>
+
+        <div class="alphabet-layout">
+          <div class="alphabet-board">
+            <p class="alphabet-mobile-hint">Нажмите на букву — откроется карточка с подсказкой.</p>
+            <div class="letter-grid" id="letterGrid" aria-label="Буквы русского алфавита"></div>
+          </div>
+          <aside class="letter-card" id="letterCard" aria-live="polite"></aside>
+        </div>
+
+        <dialog class="letter-dialog" id="letterDialog" aria-label="Информация о букве">
+          <button class="dialog-close" id="dialogClose" type="button" aria-label="Закрыть">×</button>
+          <div id="letterDialogContent"></div>
+        </dialog>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">Я</span>
+        <div>
+          <strong>Русский язык</strong>
+          <p>Учимся с интересом — каждый день понемногу.</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#rules">Правила</a>
+        <a href="#exercises">Упражнения</a>
+        <a href="#vocabulary">Слова</a>
+        <a href="#alphabet">Алфавит</a>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> · Материалы можно использовать на уроках и дома.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
